@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/OvalMoney/stylelint-config-oval.svg?branch=master&style=flat)](https://travis-ci.org/OvalMoney/stylelint-config-oval)
+[![npm](https://img.shields.io/npm/v/stylelint-config-oval.svg?style=flat)](https://www.npmjs.com/package/stylelint-config-oval)
+
+
 # stylelint-config-oval
 
 > Opinionated Stylelint sharable config for Oval projects.
