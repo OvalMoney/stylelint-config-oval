@@ -13,7 +13,7 @@ yarn add --dev stylelint-config-oval
 
 Add a Stylelint config file to your project and extends with our config:
 
-#### `.stylelintrc
+#### `.stylelintrc`
 ```json
 {
   "extends": "stylelint-config-oval"
