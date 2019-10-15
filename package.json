@@ -1,0 +1,39 @@
+{
+  "name": "stylelint-config-oval",
+  "version": "0.0.1",
+  "description": "Stylelint Oval sharable configuration",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OvalMoney/stylelint-config-oval"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "styelint-config-oval",
+    "stylelint-config-standard",
+    "oval",
+    "standard"
+  ],
+  "author": "OvalMoney",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest",
+    "release": "git pull && standard-version"
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^19.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "eslint": "^6.5.1",
+    "eslint-config-oval-base": "^1.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0",
+    "standard-version": "^7.0.0",
+    "stylelint": "^11.1.1",
+    "typescript": "^3.6.4"
+  }
+}
