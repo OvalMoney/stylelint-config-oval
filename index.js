@@ -47,7 +47,9 @@ module.exports = {
     'unit-case': 'lower',
     'value-list-max-empty-lines': 0,
     'property-case': 'lower',
-    'custom-property-empty-line-before': 'always',
+    'custom-property-empty-line-before': ['always', {
+      except: ['first-nested'],
+    }],
     'declaration-colon-newline-after': 'always-multi-line',
     'declaration-block-semicolon-newline-after': 'always',
     'declaration-block-trailing-semicolon': 'always',
