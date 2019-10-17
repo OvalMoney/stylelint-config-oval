@@ -1,50 +1,57 @@
-@import url(x.css);
-@import url(y.css);
+@import url('x.css');
+@import url('y.css');
 
 /**
  * Multi-line comment
  */
 
-.selector-1,
-.selector-2,
-.selector-3[type='text'] {
+.Selector-1,
+.Selector-2,
+.Selector-3[ type='text' ] {
   background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
   box-sizing: border-box;
   display: block;
   color: #333;
 }
 
-.selector-a,
-.selector-b:not(:first-child) {
-  padding: 10px !important;
+.Selector-a,
+.Selector-b:not(:first-child) {
+  padding: 10px;
   top: calc(calc(1em * 2) / 3);
 }
 
-.selector-x { width: 10%; }
-.selector-y { width: 20%; }
-.selector-z { width: 30%; }
+.Selector-x {
+  width: 10%;
+}
+
+.Selector-y {
+  width: 20%;
+}
+
+.Selector-z {
+  width: 30%;
+}
 
 /* Single-line comment */
 
-@media (min-width >= 60em) {
-  .selector {
+@media ( min-width >= 60em ) {
+  & .Selector {
+
     /* Flush to parent comment */
     transform: translate(1, 1) scale(3);
   }
 }
-
-@media (orientation: portrait), projection and (color) {
-  .selector-i + .selector-ii {
+@media ( orientation: portrait ), projection and ( color ) {
+  .Selector-i + .Selector-ii {
     background: color(rgb(0, 0, 0) lightness(50%));
     font-family: helvetica, 'arial black', sans-serif;
   }
 }
 
 /* Flush single line comment */
-@media
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .selector {
+
+@media screen and ( min-resolution: 192dpi ), screen and ( min-resolution: 2dppx ) {
+  .Selector {
     background-image:
       repeating-linear-gradient(
         -45deg,
@@ -62,8 +69,9 @@
   }
 
   /* Flush nested single line comment */
-  .selector::after {
+
+  .Selector::after {
     content: '→';
-    background-image: url(x.svg);
+    background-image: url('x.svg');
   }
 }
