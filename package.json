@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-oval",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Stylelint Oval sharable configuration",
   "main": "index.js",
   "repository": {
