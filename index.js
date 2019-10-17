@@ -1,7 +1,7 @@
 
 module.exports = {
   extends: 'stylelint-config-standard',
-  'rules': {
+  rules: {
     'declaration-no-important': true,
     'color-no-invalid-hex': true,
     'font-family-no-missing-generic-family-keyword': true,
@@ -9,16 +9,16 @@ module.exports = {
     'function-calc-no-unspaced-operator': true,
     'function-linear-gradient-no-nonstandard-direction': true,
     'property-no-unknown': [true, {
-      'ignoreProperties': [
+      ignoreProperties: [
         'contain',
-        'appearance'
+        'appearance',
       ],
-      'checkPrefixed': true
+      checkPrefixed: true,
     }],
     'keyframe-declaration-no-important': true,
     'declaration-block-no-duplicate-properties': [true, {
-        'ignore': ['consecutive-duplicates-with-different-values']
-      }
+      ignore: ['consecutive-duplicates-with-different-values'],
+    },
     ],
     'block-no-empty': true,
     'selector-pseudo-element-no-unknown': true,
@@ -31,8 +31,8 @@ module.exports = {
     'number-max-precision': 2,
     'value-no-vendor-prefix': true,
     'property-no-vendor-prefix': [true, {
-      'ignoreProperties': ['appearance']
-      }],
+      ignoreProperties: ['appearance'],
+    }],
     'selector-class-pattern': '[A-Z][A-Za-z0-9_-]+',
     'selector-max-empty-lines': 0,
     'media-feature-name-no-vendor-prefix': true,
@@ -58,17 +58,20 @@ module.exports = {
     'selector-combinator-space-after': 'always',
     'selector-descendant-combinator-no-non-space': true,
     'selector-list-comma-newline-after': 'always',
-    'selector-list-comma-space-after': 'always',
+    'selector-list-comma-space-before': 'never',
     'rule-empty-line-before': ['always', {
-      'except': ['first-nested']
+      except: ['first-nested'],
     }],
     'media-feature-colon-space-after': 'always',
+    'media-feature-colon-space-before': 'never',
     'media-feature-name-case': 'lower',
     'media-feature-parentheses-space-inside': 'always',
     'media-feature-range-operator-space-after': 'always',
-    'media-feature-range-operator-space-before': 'never',
+    'media-feature-range-operator-space-before': 'always',
     'media-query-list-comma-space-after': 'always',
-    'at-rule-empty-line-before': 'always',
+    'at-rule-empty-line-before': ['always', {
+      except: ['after-same-name'],
+    }],
     'at-rule-name-case': 'lower',
     'at-rule-name-space-after': 'always',
     'at-rule-semicolon-newline-after': 'always',
@@ -76,7 +79,11 @@ module.exports = {
     'comment-empty-line-before': 'always',
     'comment-whitespace-inside': 'always',
     'max-empty-lines': [2, {
-      'ignore': ['comments']
-    }]
+      ignore: ['comments'],
+    }],
+    'declaration-block-single-line-max-declarations': 0,
+    'function-url-quotes': ['always', {
+      except: ['empty'],
+    }],
   },
 };
