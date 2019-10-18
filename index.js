@@ -8,7 +8,7 @@ module.exports = {
     'function-calc-no-invalid': true,
     'function-calc-no-unspaced-operator': true,
     'function-linear-gradient-no-nonstandard-direction': true,
-    'property-no-unknown': false,
+    'property-no-unknown': null,
     'keyframe-declaration-no-important': true,
     'declaration-block-no-duplicate-properties': [true, {
       ignore: ['consecutive-duplicates-with-different-values'],
