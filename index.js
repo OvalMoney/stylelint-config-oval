@@ -8,13 +8,7 @@ module.exports = {
     'function-calc-no-invalid': true,
     'function-calc-no-unspaced-operator': true,
     'function-linear-gradient-no-nonstandard-direction': true,
-    'property-no-unknown': [true, {
-      ignoreProperties: [
-        'contain',
-        'appearance',
-      ],
-      checkPrefixed: true,
-    }],
+    'property-no-unknown': false,
     'keyframe-declaration-no-important': true,
     'declaration-block-no-duplicate-properties': [true, {
       ignore: ['consecutive-duplicates-with-different-values'],
