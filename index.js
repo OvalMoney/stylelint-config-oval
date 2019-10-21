@@ -32,7 +32,7 @@ module.exports = {
     'media-feature-name-no-vendor-prefix': true,
     'at-rule-no-vendor-prefix': true,
     'max-nesting-depth': 2,
-    'font-weight-notation': 'numeric',
+    'font-weight-notation': null,
     'font-family-name-quotes': 'always-where-recommended',
     'number-leading-zero': 'always',
     'number-no-trailing-zeros': true,
