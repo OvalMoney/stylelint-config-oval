@@ -7,7 +7,7 @@
 
 .Selector-1,
 .Selector-2,
-.Selector-3[ type='text' ] {
+.Selector-3[type='text'] {
   --customProperty1: #fff;
   --customProperty2: #000;
 
