@@ -48,7 +48,7 @@ module.exports = {
     'declaration-block-semicolon-newline-after': 'always',
     'declaration-block-trailing-semicolon': 'always',
     'block-closing-brace-newline-after': 'always',
-    'selector-attribute-brackets-space-inside': 'always',
+    'selector-attribute-brackets-space-inside': null,
     'selector-attribute-quotes': 'always',
     'selector-combinator-space-before': 'always',
     'selector-combinator-space-after': 'always',
