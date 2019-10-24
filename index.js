@@ -16,7 +16,9 @@ module.exports = {
     ],
     'block-no-empty': true,
     'selector-pseudo-element-no-unknown': true,
-    'at-rule-no-unknown': true,
+    'at-rule-no-unknown': [true, {
+      ignoreAtRules: ["mixin", "define-mixin"]
+    }],
     'no-duplicate-at-import-rules': true,
     'no-duplicate-selectors': true,
     'no-empty-source': true,
